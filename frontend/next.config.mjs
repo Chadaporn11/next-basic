@@ -1,6 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
+  output: 'export',
   images: {
     remotePatterns: [
       {
@@ -8,6 +9,7 @@ const nextConfig = {
         hostname: 'cdn.dummyjson.com',
       },
     ],
+    unoptimized: true //เมื่อไปดึงข้อมูลรูปภาพข้างนอกมาให้ปรับขนาดตามเหมาะสม
   },
 };
 
